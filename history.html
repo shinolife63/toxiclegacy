@@ -1,9 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- Consider specifying the language of your content by adding the `lang` attribute to <html> -->
 <!--[if lt IE 7]> <html class="no-js ie6"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 <head>
 
 	<meta charset="utf-8">
@@ -122,13 +132,27 @@
 
 	<aside class="widget">
 		<h3 class="widget-title">Quick Links</h3>
+        <ul style="list-style-type:disc">
+            <li>Toxic Legacy on Social Media</li>
+            <ul style="list-style-type:none">
+                <li><span class="fb-like" data-href="https://www.facebook.com/WCTS.ToxicLegacy" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></span></li>
+                <li>
+                    <a href="https://twitter.com/AToxicLegacy" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @AToxicLegacy</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script></span>
+                </li>
+            </ul>
+            <li>External Media</li>
+            <ul>
+                <li><a href="http://www.ramapoughlenapenation.org/">Ramapough Lenape Nation Homepage</a></li>
+                <li>Articles</li>
+                <ul style="list-style-type:none">
+                    <li><a href="http://america.aljazeera.com/articles/2014/3/21/cleaning-up-a-toxiclegacy.html">Cleaning Up A Toxic Legacy</a></li>
+                    <li><a href="http://www.nytimes.com/2006/01/19/nyregion/19ringwood.html">Ramapough Tribe Sues Ford Over Sludge Dumping in New Jersey</a></li>
+                    <li><a href="http://louisproyect.org/2011/07/18/what-ford-did-to-the-ramapough-mountain-indians/">What Ford did to the Ramapough Mountain Indians</a></li>
+                </ul>
+            </ul>
 
-		<ul>
-			<li><a href="#">Li element</a></li>
-			<li><a href="http://www.ramapoughlenapenation.org/">Ramapough Lenape Nation</a></li>
-			<li><a href="#">Li element</a></li>
-			<li><a href="#">Li element</a></li>
-		</ul>
+        </ul>
 	</aside> <!-- .widget -->
 
 
