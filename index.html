@@ -57,8 +57,13 @@
 		</hgroup>
 
 	</header> <!-- #master-header -->
-    <script>if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { window.location.replace("http://shinolife63.github.io/toxiclegacy/") }</script> 
-    <!--Escapes Tk Domain's Iframe for mobile scaling-->
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            if (inIframe()) {
+                window.location.replace("http://shinolife63.github.io/toxiclegacy/")
+            }
+        }
+    </script>    <!--Escapes Tk Domain's Iframe for mobile scaling-->
 <div id="main" class="row clearfix">
 
 	<!-- Main navigation -->
